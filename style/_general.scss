@@ -1,0 +1,52 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+   &::before,
+   &::after {
+      box-sizing: border-box;
+      
+   }
+}
+
+ul,
+ol {
+   padding: 0;
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   display: block;
+}
+
+button {
+   border: none;
+}
+
+img {
+   display: block;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1360px;
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+   // @media screen and (max-width: 1390px){
+   //    max-width: 1140px;
+   // }
+}
+
+button {
+   transition: .8s all;
+}
+
+button:hover {
+   background: #0c2fc9;
+}

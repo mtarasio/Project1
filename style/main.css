@@ -1,0 +1,615 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+button {
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+button {
+  transition: 0.8s all;
+}
+
+button:hover {
+  background: #0c2fc9;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("../fonts/Aleo-Regular.woff2") format("woff2"), url("../fonts/Aleo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Light.woff2") format("woff2"), url("../fonts/JosefinSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Regular.woff2") format("woff2"), url("../fonts/JosefinSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSans-Bold.woff2") format("woff2"), url("../fonts/JosefinSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  background: #ffffff url("../img/HeaderBackground.jpg") no-repeat center center;
+  background-size: cover;
+  height: 862px;
+}
+.header__heading {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 295px;
+  margin-bottom: 10px;
+}
+.header__slogan {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header__search-form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 647px;
+  width: 100%;
+  margin-bottom: 210px;
+}
+.header__search-form input {
+  position: absolute;
+  max-width: 647px;
+  width: 100%;
+  min-height: 60px;
+  margin-top: 50px;
+  padding-left: 36px;
+  padding-right: 170px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #999999;
+  outline: none;
+}
+.header__search-form ::-moz-placeholder {
+  position: absolute;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #999999;
+  top: 20px;
+  left: 36px;
+}
+.header__search-form ::placeholder {
+  position: absolute;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #999999;
+  top: 20px;
+  left: 36px;
+}
+.header__search-form .search-btn {
+  position: absolute;
+  top: -1px;
+  right: 5px;
+  z-index: 39;
+  padding: 16px 24px 16px 52px;
+  background: #5373fd;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header__search-form .search-icon {
+  position: absolute;
+  top: 17px;
+  right: 106px;
+  fill: #ffffff;
+  z-index: 39;
+}
+.header__scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__scroll a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+.header__scroll svg {
+  margin: 0 auto;
+}
+.header__scroll .chek-mark-icon {
+  fill: #ffffff;
+}
+
+.navigation {
+  background: #5373fd;
+}
+.navigation__row {
+  display: flex;
+  padding: 32px 0;
+  gap: 577px;
+  justify-content: space-between;
+}
+.navigation__caption {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.navigation__list {
+  display: flex;
+  gap: 40px;
+}
+.navigation__list li {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.choose-us {
+  background: url("../img/WhyBackground.jpg") no-repeat center center;
+  background-size: cover;
+  height: 704px;
+}
+.choose-us .container {
+  display: flex;
+  gap: 136px;
+}
+.choose-us__description {
+  max-width: 648px;
+  width: 100%;
+  margin-top: 190px;
+}
+.choose-us__capion {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.choose-us__text1 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.choose-us__text2 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.choose-us__btn {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 32px;
+  background: #5373fd;
+}
+.choose-us__photos {
+  margin-top: 124px;
+  max-width: 424px;
+  width: 100%;
+}
+.choose-us img {
+  max-width: 350px;
+}
+.choose-us__photo {
+  margin-top: 16px;
+  float: right;
+}
+
+.steps {
+  background: #333333;
+  height: 306px;
+  margin: 0 auto;
+}
+.steps__container {
+  z-index: 3;
+  background: url("../img/Line.svg") top center/100% 100% no-repeat;
+  background-size: 70%;
+  background-position-y: 60px;
+  background-position-x: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.steps__icon-box {
+  background: #333333;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: none;
+}
+.steps__icon-box svg {
+  margin: 16px;
+}
+.steps .vectorsearch {
+  fill: #5373fd;
+}
+.steps .vectorcircle {
+  fill: #ff6363;
+}
+.steps .vectorfinger {
+  fill: #00a2ff;
+}
+.steps__icon-description {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.book-now {
+  background: url(../img/modul-house.jpg) no-repeat center center;
+  background-size: cover;
+  height: 684px;
+  padding-top: 220px;
+}
+.book-now__card {
+  background: rgba(35, 35, 35, 0.9);
+  padding: 44px 32px;
+  max-width: 648px;
+  width: 100%;
+}
+.book-now__country {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.book-now__caption {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.book-now__description {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.book-now__btn {
+  background: #5373fd;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 56px;
+}
+
+.book-now2 {
+  background: url("../img/sky.jpg") no-repeat center center;
+  background-size: cover;
+  height: 712px;
+  padding-top: 220px;
+  width: 100%;
+}
+.book-now2__card {
+  background: rgba(35, 35, 35, 0.9);
+  padding: 44px 32px;
+  max-width: 648px;
+  width: 100%;
+  float: right;
+}
+.book-now2__country {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.book-now2__caption {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.book-now2__description {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.book-now2__btn {
+  background: #5373fd;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 56px;
+}
+
+.tourist-says {
+  background: url("../img/BGman.jpg") no-repeat center center;
+  background-size: cover;
+  height: 680px;
+}
+.tourist-says__box {
+  padding-top: 100px;
+}
+.tourist-says__caption {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.tourist-says__blockquote-block {
+  display: flex;
+}
+.tourist-says__text {
+  background: #333333;
+  padding: 48px 60px;
+}
+.tourist-says__author {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.tourist-says__blockquote {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.tourist-says__quote {
+  fill: #5373FD;
+  margin-right: 6px;
+}
+
+.footer {
+  background: #000000;
+  height: 268px;
+  margin: 0 auto;
+  border-top: #ffffff 1px solid;
+}
+.footer__title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 80px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.footer__slogan {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__socials {
+  display: flex;
+  gap: 33px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.footer__icon {
+  fill: #FFFFFF;
+  transition: 0.3s all;
+}
+.footer a:hover .footer__icon {
+  fill: #5373FD;
+}/*# sourceMappingURL=main.css.map */
