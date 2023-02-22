@@ -91,6 +91,21 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1390px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
 
 button {
   transition: 0.8s all;
@@ -261,6 +276,24 @@ button:hover {
   gap: 577px;
   justify-content: space-between;
 }
+@media screen and (max-width: 1390px) {
+  .navigation__row {
+    gap: 357px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navigation__row {
+    gap: 197px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation__row {
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navigation__caption {
   font-family: "Josefin Sans";
   font-style: normal;
@@ -297,10 +330,24 @@ button:hover {
   display: flex;
   gap: 136px;
 }
+@media screen and (max-width: 768px) {
+  .choose-us .container {
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+}
 .choose-us__description {
   max-width: 648px;
   width: 100%;
   margin-top: 190px;
+}
+@media screen and (max-width: 768px) {
+  .choose-us__description {
+    max-width: 720px;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
 }
 .choose-us__capion {
   font-family: "Aleo";
@@ -350,18 +397,43 @@ button:hover {
   max-width: 424px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .choose-us__photos {
+    display: flex;
+    margin-top: 60px;
+    max-width: 720px;
+    width: 100%;
+    gap: 24px;
+  }
+}
 .choose-us img {
   max-width: 350px;
+}
+@media screen and (max-width: 768px) {
+  .choose-us img {
+    max-width: 348px;
+  }
 }
 .choose-us__photo {
   margin-top: 16px;
   float: right;
+}
+@media screen and (max-width: 768px) {
+  .choose-us__photo {
+    margin-top: 0;
+    float: none;
+  }
 }
 
 .steps {
   background: #333333;
   height: 306px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .steps {
+    height: 658px;
+  }
 }
 .steps__container {
   z-index: 3;
@@ -373,6 +445,15 @@ button:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .steps__container {
+    background: none;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    padding-top: 44px;
+  }
+}
 .steps__icon-box {
   background: #333333;
   margin-top: 120px;
@@ -382,6 +463,11 @@ button:hover {
   align-items: center;
   gap: 4px;
   border: none;
+}
+@media screen and (max-width: 768px) {
+  .steps__icon-box {
+    margin-top: 0;
+  }
 }
 .steps__icon-box svg {
   margin: 16px;
@@ -411,6 +497,20 @@ button:hover {
   background-size: cover;
   height: 684px;
   padding-top: 220px;
+}
+@media screen and (max-width: 768px) {
+  .book-now {
+    padding-top: 120px;
+    height: 588px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .book-now .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .book-now__card {
   background: rgba(35, 35, 35, 0.9);
@@ -469,6 +569,20 @@ button:hover {
   padding-top: 220px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .book-now2 {
+    padding-top: 120px;
+    height: 588px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .book-now2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .book-now2__card {
   background: rgba(35, 35, 35, 0.9);
   padding: 44px 32px;
@@ -523,10 +637,15 @@ button:hover {
 .tourist-says {
   background: url("../img/BGman.jpg") no-repeat center center;
   background-size: cover;
-  height: 680px;
+  padding-bottom: 180px;
 }
 .tourist-says__box {
-  padding-top: 100px;
+  padding-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .tourist-says__box {
+    padding-top: 60px;
+  }
 }
 .tourist-says__caption {
   font-family: "Aleo";
@@ -541,6 +660,50 @@ button:hover {
 }
 .tourist-says__blockquote-block {
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .tourist-says__blockquote-block {
+    flex-direction: column;
+  }
+}
+.tourist-says__blockquote-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+@media screen and (max-width: 1390px) {
+  .tourist-says__blockquote-block img {
+    max-width: 380px;
+    width: 100%;
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .tourist-says__blockquote-block img {
+    max-width: 960px;
+    width: 100%;
+    height: 336px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tourist-says__blockquote-block img {
+    max-width: 690px;
+    width: 100%;
+    height: 336px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 .tourist-says__text {
   background: #333333;

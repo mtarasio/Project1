@@ -38,9 +38,16 @@ img {
    width: 100%;
    padding: 0 15px;
    margin: 0 auto;
-   // @media screen and (max-width: 1390px){
-   //    max-width: 1140px;
-   // }
+   @media screen and (max-width: 1390px){
+      max-width: 1170px;
+
+   }
+   @media screen and (max-width: 1024px){
+      max-width: 960px;
+   }
+   @media screen and (max-width: 768px){
+      max-width: 720px;
+   }
 }
 
 button {
